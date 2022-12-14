@@ -11,6 +11,8 @@
         "outputPath": "dist/libs/nx-go",
         "main": "libs/nx-go/src/index.ts",
         "tsConfig": "libs/nx-go/tsconfig.lib.json",
+        "updateBuildableProjectDepsInPackageJson": true,
+        "buildableProjectDepsInPackageJsonType": "dependencies",
         "assets": [
           "libs/nx-go/*.md",
           {
@@ -54,6 +56,13 @@
       "options": {
         "jestConfig": "libs/nx-go/jest.config.ts",
         "passWithNoTests": true
+      }
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "buildTarget": "nx-go:build",
+        "outputPath": "./dist/libs/nx-go"
       }
     }
   },
