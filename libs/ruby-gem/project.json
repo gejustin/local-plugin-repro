@@ -1,0 +1,12 @@
+{
+  "name": "ruby-gem",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ruby-gem",
+  "targets": {
+    "lint": {
+      "command": "echo 'lint passed'"
+    }
+  },
+  "tags": []
+}

@@ -6,6 +6,7 @@
     "go-app-2": "apps/go-app-2",
     "go-lib-1": "libs/go-lib-1",
     "nx-go": "libs/nx-go",
-    "nx-go-e2e": "apps/nx-go-e2e"
+    "nx-go-e2e": "apps/nx-go-e2e",
+    "ruby-gem": "libs/ruby-gem"
   }
 }
