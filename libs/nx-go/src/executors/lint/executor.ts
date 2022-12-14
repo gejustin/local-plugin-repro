@@ -13,7 +13,7 @@ export default async function runExecutor(options: LintExecutorSchema, context: 
   const command = [linter, args, sources].filter((a) => a).join(' ')
 
   if (isVerbose) {
-    console.log(`Executing Lint linter: '${linter}', arguments: '${args}', cwd: '${cwd}', command: '${command}'`)
+    console.log(`Executing Lint linter - '${linter}', arguments: '${args}', cwd: '${cwd}', command: '${command}'`)
   }
   try {
     execSync(command, { cwd, stdio: [0, 1, 2] })
