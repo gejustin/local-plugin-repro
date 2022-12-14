@@ -25,11 +25,11 @@ export function registerProjectTargets(
 
   const defaultTargets = {
     lint: {
-      inputs: ['default', 'nxGoPlugin'],
+      inputs: ['default'],
       executor: '@repro/nx-go:lint',
     },
     test: {
-      inputs: ['default', 'nxGoPlugin'],
+      inputs: ['default'],
       executor: '@repro/nx-go:test',
     },
   };
@@ -38,11 +38,11 @@ export function registerProjectTargets(
     return {
       ...defaultTargets,
       build: {
-        inputs: ['default', 'nxGoPlugin'],
+        inputs: ['default'],
         executor: '@repro/nx-go:build',
       },
       serve: {
-        inputs: ['default', 'nxGoPlugin'],
+        inputs: ['default'],
         executor: '@repro/nx-go:serve',
       },
     };

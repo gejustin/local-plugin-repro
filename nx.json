@@ -26,7 +26,6 @@
   },
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "nxGoPlugin": ["{workspaceRoot}/libs/nx-go/**/*"],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
