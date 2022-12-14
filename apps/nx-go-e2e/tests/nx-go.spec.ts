@@ -14,7 +14,7 @@ describe('nx-go e2e', () => {
   // on a unique project in the workspace, such that they
   // are not dependant on one another.
   beforeAll(() => {
-    ensureNxProject('@local-plugin-repro/nx-go', 'dist/libs/nx-go');
+    ensureNxProject('@repro/nx-go', 'dist/libs/nx-go');
   });
 
   afterAll(() => {

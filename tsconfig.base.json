@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@local-plugin-repro/nx-go": ["libs/nx-go/src/index.ts"]
+      "@repro/nx-go": ["libs/nx-go/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
